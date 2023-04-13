@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <div class="gender">
+        Male<input type="radio" name="gender" value="male" id="male">
+        Female<input type="radio" name="gender" value="female" id="female">
+       </div> 
+       <div class="height">
+        <p id="heightTitle" >Height</p>
+        <input type="range" min="100" max="215" value="160" 
+        oninput="rangeValue.innerText=this.value">
+        <p id="rangeValue">160</p>
+       </div>
+       <div class="weight">
+        <p id="weightTitle">Weight</p>
+        <p id="weight">55</p>
+        <div class="button">
+            <button class="increase">+</button>
+            <button class="decrease">-</button>
+        </div>
+       </div>
+       <div class="age">
+        <p id="ageTitle">Age</p>
+        <p id="age">23</p>
+       <div class="button">
+        <button class="plus">+</button>
+        <button class="mines">-</button>
+       </div>
+       </div>
+       <button  class="calculate" type="submit">Calculate</button>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
