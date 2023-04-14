@@ -1,5 +1,5 @@
 .container{
-    background-color: rgb(244, 212, 212);
+    background-color: #c8e6c9;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(9,1fr);
@@ -69,8 +69,22 @@ button , input{
 .result{
     box-shadow: 2px 2px 2px   darkgray;
     margin-left: 10px;
-    margin-right: 10px;
-    grid-column: 1/-1;
+    /* margin-right: 10px; */
+    grid-column: 1/1;
     border-radius: 10px;
 
 } 
+.sitution{
+    box-shadow: 2px 2px 2px   darkgray;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: green;
+}
+.hidden{
+    display: none;
+}
+
