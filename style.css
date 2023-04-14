@@ -2,7 +2,7 @@
     background-color: rgb(244, 212, 212);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(8,1fr);
+    grid-template-rows: repeat(9,1fr);
     gap: 5px;
     max-width: 400px;
 }
@@ -66,3 +66,11 @@ button , input{
     border-radius: 20%;
     background-color: aliceblue;
 }
+.result{
+    box-shadow: 2px 2px 2px   darkgray;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-column: 1/-1;
+    border-radius: 10px;
+
+} 

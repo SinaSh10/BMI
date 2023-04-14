@@ -10,32 +10,36 @@
 <body>
     <div class="container">
        <div class="gender">
-        Male<input type="radio" name="gender" value="male" id="male">
-        Female<input type="radio" name="gender" value="female" id="female">
+            Male<input type="radio" name="gender" value="male" id="male">
+            Female<input type="radio" name="gender" value="female" id="female">
        </div> 
        <div class="height">
-        <p id="heightTitle" >Height</p>
-        <input type="range" min="100" max="215" value="160" 
-        oninput="rangeValue.innerText=this.value">
-        <p id="rangeValue">160</p>
+            <p id="heightTitle" >Height</p>
+            <input type="range" min="100" max="215" value="160" 
+            oninput="rangeValue.innerText=this.value">
+            <p id="rangeValue">165</p>
        </div>
        <div class="weight">
-        <p id="weightTitle">Weight</p>
-        <p id="weight">55</p>
-        <div class="button">
-            <button class="increase">+</button>
-            <button class="decrease">-</button>
-        </div>
+            <p id="weightTitle">Weight</p>
+            <p id="weight">55</p>
+            <div class="button">
+                <button id="increase">+</button>
+                <button id="decrease">-</button>
+            </div>
        </div>
        <div class="age">
-        <p id="ageTitle">Age</p>
-        <p id="age">23</p>
-       <div class="button">
-        <button class="plus">+</button>
-        <button class="mines">-</button>
+            <p id="ageTitle">Age</p>
+            <p id="age">23</p>
+            <div class="button">
+                <button id="plus">+</button>
+                <button id="mines">-</button>
+            </div>
        </div>
+       <button id="calculate"  class="calculate" type="submit">Calculate</button>
+       <div class="result" id="result">
+        <p id="resultShow" >12</p>
        </div>
-       <button  class="calculate" type="submit">Calculate</button>
+
     </div>
 
 
