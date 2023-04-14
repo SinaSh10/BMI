@@ -21,13 +21,16 @@
     grid-row: 2/7;
     border-radius: 10px;
     margin-left: 10px;
-    /* transform: translate(-50%,-50%); */
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    
+    gap: 10px;
     
 
+}
+input{
+    transform: rotate(270deg);
 }
 .weight{
     box-shadow: 2px 2px 2px   darkgray;
@@ -59,8 +62,18 @@
 
 
 }
+.calculate:hover{
+    background-color: rgb(84, 188, 73);
+}
+
 button , input{
     cursor: pointer;
+}
+#increase:hover,#plus:hover{
+    background-color:green ;
+}
+#decrease:hover,#mines:hover{
+    background-color:red ;
 }
 .button>button{
     border-radius: 20%;
